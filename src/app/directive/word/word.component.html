@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-md-4">
+    <label for="font">Font</label>
+    <select type="text" id="font" class="form-control" [(ngModel)]="font">
+      <option>Arial</option>
+      <option>Verdana</option>
+    </select>
+  </div>
+  <div class="col-md-4">
+    <label for="size">Police</label>
+    <input type="number" id="size" class="form-control" [(ngModel)]="size">
+  </div>
+  <div class="col-md-4">
+    <label for="color">Color</label>
+    <input type="color" id="color" class="form-control" [(ngModel)]="color">
+  </div>
+</div>
+
+<div class="row" [ngStyle]="{'color' : color, 'font-size' : size+'px' , 'font-family' : font}">
+  Une paragraphe bla bla bla
+</div>

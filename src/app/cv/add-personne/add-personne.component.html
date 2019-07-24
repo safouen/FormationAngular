@@ -1,0 +1,16 @@
+<form action="" #formulaire='ngForm' (submit)="addPersonne(formulaire)">
+  <label for="name">Name</label>
+  <input type="text" class="form-control" ngModel name="name" id="name" required>
+  <label for="firstname">First name</label>
+  <input type="text" class="form-control" ngModel name="firstname" id="firstname">
+  <label for="age">Age</label>
+  <input type="text" class="form-control" ngModel name="age" id="age">
+  <label for="job">Job</label>
+  <input type="text" class="form-control" ngModel name="job" id="job">
+  <label for="path">Path</label>
+  <input type="text" class="form-control" ngModel name="path" id="path">
+  <label for="cin">CIN</label>
+  <input type="text" class="form-control" ngModel name="cin" id="cin">
+
+  <button class="btn btn-primary"  [disabled]="formulaire.invalid">Add</button>
+</form>
